@@ -6,6 +6,7 @@ def some_gen(begin, end, func):
     for i in range(end):
         if i < end:
             i = i + 1
+            print(i)
             yield begin
             begin = func(begin)
 
