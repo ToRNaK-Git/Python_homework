@@ -1,9 +1,9 @@
 def is_even(number):
-    string = str(number)
+    last = str(number)[-1]
     even_nums = [0, 2, 4, 6, 8]
     result = False
     for i in even_nums:
-        if str(i) == string[-1]:
+        if i == int(last):
             result = True
     return result
 
