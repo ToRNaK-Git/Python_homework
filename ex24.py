@@ -1,10 +1,10 @@
 def prime_generator(end):
     counter = 0
     for i in range(2, end+1):
-        for j in range(1, i):
+        for j in range(1, i+1):
             if i % j == 0:
                 counter = counter + 1
-        if counter == 1:
+        if counter <= 2:
             yield i
         counter = 0
 
